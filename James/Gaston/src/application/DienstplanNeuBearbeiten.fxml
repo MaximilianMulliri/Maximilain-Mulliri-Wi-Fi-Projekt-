@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SceneController">
+   <children>
+      <TabPane layoutX="46.0" layoutY="83.0" prefHeight="635.0" prefWidth="1109.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Küche">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="80.0" layoutY="40.0" prefHeight="506.0" prefWidth="939.0">
+                          <columns>
+                            <TableColumn prefWidth="105.0" text="Team" />
+                            <TableColumn minWidth="0.0" prefWidth="105.0" text="Montag" />
+                              <TableColumn prefWidth="105.0" text="Dienstag" />
+                              <TableColumn prefWidth="105.0" text="Mittwoch" />
+                              <TableColumn prefWidth="105.0" text="Donnerstag" />
+                              <TableColumn prefWidth="105.0" text="Freitag" />
+                              <TableColumn prefWidth="105.0" text="Samstag" />
+                              <TableColumn prefWidth="105.0" text="Soinntag" />
+                              <TableColumn prefWidth="105.0" text="Dienste" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="513.0" layoutY="14.0" prefHeight="18.0" prefWidth="38.0" text="Kw ID" />
+                        <Label layoutX="562.0" layoutY="14.0" prefHeight="17.0" prefWidth="25.0" text="42" />
+                        <DatePicker layoutX="335.0" layoutY="11.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Service">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="325.0" prefWidth="623.0">
+                     <children>
+                        <TableView layoutX="80.0" layoutY="40.0" prefHeight="506.0" prefWidth="939.0">
+                          <columns>
+                            <TableColumn prefWidth="105.0" text="Team" />
+                            <TableColumn prefWidth="105.0" text="Montag" />
+                              <TableColumn prefWidth="105.0" text="Dienstag" />
+                              <TableColumn prefWidth="105.0" text="Mittwoch" />
+                              <TableColumn prefWidth="105.0" text="Donnerstag" />
+                              <TableColumn prefWidth="105.0" text="Freitag" />
+                              <TableColumn prefWidth="105.0" text="Samstag" />
+                              <TableColumn prefWidth="105.0" text="Sonntag" />
+                              <TableColumn prefWidth="105.0" text="Dienste" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="513.0" layoutY="14.0" prefHeight="18.0" prefWidth="38.0" text="Kw ID" />
+                        <Label layoutX="562.0" layoutY="14.0" prefHeight="17.0" prefWidth="25.0" text="42" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Office">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="80.0" layoutY="40.0" prefHeight="506.0" prefWidth="939.0">
+                           <columns>
+                              <TableColumn prefWidth="105.0" text="Team" />
+                              <TableColumn prefWidth="105.0" text="Montag" />
+                              <TableColumn prefWidth="105.0" text="Dienstag" />
+                              <TableColumn prefWidth="105.0" text="Mittwoch" />
+                              <TableColumn prefWidth="105.0" text="Donnerstag" />
+                              <TableColumn prefWidth="105.0" text="Freitag" />
+                              <TableColumn prefWidth="105.0" text="Samstag" />
+                              <TableColumn prefWidth="105.0" text="Sonntag" />
+                              <TableColumn prefWidth="105.0" text="Dienste" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="513.0" layoutY="26.0" prefHeight="18.0" prefWidth="38.0" text="Kw ID" />
+                        <Label layoutX="562.0" layoutY="26.0" prefHeight="17.0" prefWidth="25.0" text="42" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="1102.0" layoutY="743.0" mnemonicParsing="false" onAction="#switchToStart" text="Zurück" />
+      <Button layoutX="984.0" layoutY="743.0" mnemonicParsing="false" text="Speichern" />
+      <Button layoutX="893.0" layoutY="743.0" mnemonicParsing="false" text="Bearbeiten" />
+   </children>
+</AnchorPane>
